@@ -12,8 +12,14 @@ mitre: T1190 (Exploit Public-Facing Application)
 
 ## Разведка
 - В интерфейсе сервиса обнаружена фича привязки Telegram-аккаунта.
+<img width="1538" height="616" alt="изображение" src="https://github.com/user-attachments/assets/28e53fa8-382e-4dd6-bfa3-931462219555" />
+
 - В исходном коде найден метод `is_user_exists`, где значение попадает в SQL-запрос как обычная строка — потенциальная SQL-инъекция.
+<img width="2178" height="276" alt="изображение" src="https://github.com/user-attachments/assets/0be28ff7-f8f8-4804-94df-db83f8deb68e" />
+
 - В скриптах инициализации найдено, что при разворачивании проекта создаётся учётка `admin`, хеш пароля которой хранится в таблице `users`, поле `password_hash`.
+<img width="1890" height="718" alt="изображение" src="https://github.com/user-attachments/assets/8b2bb916-b9a3-4eeb-a715-b1e79802e99c" />
+
 - Метод `is_user_exists`, уязвимый к инъекции, доступен только из эндпоинтов, требующих прав администратора. Вывод: нужно либо повысить привилегии, либо захватить аккаунт админа.
 
 ## Эксплуатация
