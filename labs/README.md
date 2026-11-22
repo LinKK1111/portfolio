@@ -4,5 +4,8 @@
 
 | Работа | Тема |
 |---|---|
-| [DoS-атака Slowloris и защита Nginx](dos-nginx-hardening/) | Атака на веб-сервер (slowhttptest, siege), настройка rate limiting |
+| [DoS-атака Slowloris и защита Nginx](dos-nginx-hardening/) | Атака на веб-сервер (`slowhttptest`, `siege`), настройка rate limiting |
 | [Сканирование уязвимостей (OpenVAS)](vuln-scan-openvas/) | Аутентифицированный скан, приоритизация находок, рекомендации по исправлению |
+| [Детектирование LNK-дроппера (YARA)](yara-lnk-dropper-detection/) | Статический анализ образца (`strings`), поиск IoC, написание кастомного правила `YARA` |
+| [Триаж конечной точки (THOR Lite)](thor-lite-endpoint-triage/) | Сканирование хоста на признаки компрометации, триаж срабатываний, выявление артефактов `p0wnedShell` / `Invoke-Mimikatz` |
+| [Дамп ОЗУ и анализ памяти (FTK Imager & Volatility)](FTK_Imager&Volatility/) | Снятие дампа оперативной памяти и криминалистический анализ (`windows.malfind`, `pslist`, `netscan`) |
