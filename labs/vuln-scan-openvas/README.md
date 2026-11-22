@@ -4,7 +4,7 @@ category: vulnerability-assessment
 tools: OpenVAS (Greenbone Vulnerability Manager)
 date: 2026-06-02
 ---
-📄 [Полный отчёт OpenVAS (PDF)](openvas-scan-report.pdf)
+📄 [Полный отчёт OpenVAS (PDF)](../openvas-scan-report.pdf)
 ## Описание
 Аутентифицированное сканирование уязвимостей целевого хоста (192.168.1.105, тот же LEMP-стенд) с помощью OpenVAS. Скан выполнен по SSH под пользователем `debian`.
 
