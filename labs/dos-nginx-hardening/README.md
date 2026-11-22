@@ -3,7 +3,7 @@ title: DoS-атака Slowloris и защита Nginx (limit_req, rate limiting)
 category: network-security
 tools: slowhttptest, siege, Nginx
 date: 2026-05-19
-mitre: T1499.002 (Endpoint Denial of Service: Service Exhaustion Flood)
+mitre: T1499.002 (Endpoint Denial of Service -  Service Exhaustion Flood)
 ---
 
 ## Описание
@@ -70,7 +70,7 @@ siege http://10.62.239.150/info.php -d1 -r20000 -c100000
 
 Это означает, что клиент превысил допустимую скорость запросов и Nginx принудительно сбросил его запрос по правилу зоны `peripreq`.
 
-> ⚠️ **Дополнить:** вставить сюда точный блок `limit_req_zone ... ; limit_req zone=peripreq burst=... nodelay;` из конфига, и сводку по итоговому прогону siege после включения лимитов (доступность, число заблокированных/успешных запросов).
+
 
 ## Взгляд защитника (детектирование)
 Признаки атаки Slowloris в логах:
