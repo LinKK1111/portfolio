@@ -27,6 +27,5 @@
 ### 3. Разработка кастомного YARA-правила (`lnk_detected.yar`)
 На основе выявленных строк создано собственное правило для детекта подозрительных LNK-файлов, вызывающих `cmd.exe` в связке с системным путём или браузером:
 <img width="706" height="542" alt="изображение" src="https://github.com/user-attachments/assets/75113882-4cc9-4568-899f-8163be4c99ac" />
-
-Результат - 
+Результат:
 <img width="716" height="190" alt="изображение" src="https://github.com/user-attachments/assets/786250de-3ea6-4efb-b682-a06389823407" />
